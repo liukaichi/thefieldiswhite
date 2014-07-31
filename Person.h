@@ -37,6 +37,14 @@ public:
 		fth = hop = cha = obd = pat = knw = hum = spr = end = chr = 5;
 	}
 
+	int getAge() {
+		return age;
+	}
+
+	int getYearsBaptized() {
+		return yearsBaptized;
+	}
+
 	//A bunch of public functions to raise or lower the stat by m
 	void incrFaith(int m) {
 		fth = fth + m;
@@ -98,7 +106,7 @@ public:
 			return "No";
 	}
 
-	virtual ~Person();
+	virtual ~Person(){}
 };
 
 } /* namespace std */
